@@ -1,0 +1,166 @@
+{
+  "clip": {
+    "description": "Speelt een clip geluid",
+    "usagesReply": "Gebruik: /clip <naam>",
+    "errorQueue": "Kan deze clip niet spelen omdat er een lopende queue is",
+    "errorNotChannel": "Je moet eerst een spraakkanaal joinen!"
+  },
+  "clips": {
+    "description": "Lijst van alle clips"
+  },
+  "help": {
+    "description": "Laat alle commands en beschrijvingen zien",
+    "embedTitle": "{botname} Help",
+    "embedDescription": "Lijst van alle commands"
+  },
+  "invite": {
+    "description": "Stuurt bot invite"
+  },
+  "loop": {
+    "description": "Zet aan/uit muziek loop",
+    "errorNotQueue": "Er speelt niks.",
+    "result": "Loop is nu {loop}"
+  },
+  "lyrics": {
+    "description": "Stuurt de lyrics van het huidige liedje.",
+    "errorNotQueue": "Er is niks aan het spelen.",
+    "lyricsNotFound": "Geen lyrics gevonden voor {title}.",
+    "embedTitle": "{title} - Lyrics"
+  },
+  "move": {
+    "description": "Verplaats liedjes in de queue",
+    "errorNotQueue": "Er is geen queue",
+    "usagesReply": "Gebruik: {prefix}move <Queue Number>",
+    "result": "<@{author}> 🚚 verplaatste **{title}** naar {index} in de queue."
+  },
+  "nowplaying": {
+    "description": "Laat het huidige liedje zien.",
+    "errorNotQueue": "Er speelt niks.",
+    "embedTitle": "Nu speelt.",
+    "live": " ◉ LIVE",
+    "timeRemaining": "Tijd resterend: {time}"
+  },
+  "pause": {
+    "description": "Pause the currently playing music",
+    "errorNotQueue": "There is nothing playing.",
+    "result": "<@{author}> ⏸ paused the music."
+  },
+  "ping": {
+    "description": "Show the bot's average ping",
+    "result": "📈 Average ping to API: {ping} ms"
+  },
+  "play": {
+    "description": "Speelt een liedje van Youtube of Soundcloud",
+    "errorNotChannel": "Je moet eerst een spraak kanaal joinen",
+    "errorNotInSameChannel": "Je moet in hetzelfde spraakkanaal als {user} zitten",
+    "usageReply": "Gebruik: {prefix}play <YouTube URL | Video Name | Soundcloud URL>",
+    "missingPermissionConnect": "Kan niet verbinden met spraakkanaal, Ik heb niet de juiste permissies!",
+    "missingPermissionSpeak": "Ik kan niet praten in dit spraakkanaal, Kijk na of ik de juiste permissies heb!",
+    "queueAdded": "✅ **{title}** is toegevoegd aan de queue <@{author}>",
+    "cantJoinChannel": "Kan het spraakkanaal niet joinen.: {error}",
+    "queueEnded": "❌ Muziek queue geëindigd.",
+    "queueError": "Error: {error}",
+    "startedPlaying": "🎶 Nu speelt: **{title}** {url}",
+    "skipSong": "<@{author}> ⏩ skipte het liedje",
+    "pauseSong": "<@{author}> ⏸ heeft de muziek gepauzeerd",
+    "resumeSong": "<@{author}> ▶ heeft de muziek hervat",
+    "unmutedSong": "<@{author}> 🔊 heeft de muziek geundempt!",
+    "mutedSong": "<@{author}> 🔇 dempte de muziek!",
+    "decreasedVolume": "<@{author}> 🔉 volume verlaagd, de volume is nu {volume}%",
+    "increasedVolume": "<@{author}> 🔊 volume verhoogd, de volume is nu {volume}%",
+    "loopSong": "<@{author}> Loop is nu {loop}",
+    "stopSong": "<@{author}> ⏹ stopt de muziek!",
+    "leaveChannel": "Spraakkanaal verlaten...",
+    "songNotFound": "Audio niet gevonden"
+  },
+  "playlist": {
+    "description": "Speel een afspeellijst van Youtube",
+    "usagesReply": "Gebruik: {prefix}playlist <YouTube Playlist URL | Playlist Name>",
+    "errorNotChannel": "Je moet eerst een spraakkanaal joinen!",
+    "errorNotInSameChannel": "Je moet in het zelfde spraakkanaalals {user} zitten",
+    "missingPermissionConnect": "Kan niet verbinden met spraakkanaal, Ik heb niet de juiste permissie!",
+    "missingPermissionSpeak": "Ik kan niet praten in het spraakkanaal, Kijk na of ik de juiste permissies heb!!",
+    "errorNotFoundPlaylist": "Afspeellijst niet gevonden :(",
+    "fetchingPlaylist": "⌛ Afspeellijst ophalen...",
+    "playlistCharLimit": "\nAfspeellijst dan character limiet...",
+    "startedPlaylist": "<@{author}> heeft een afspeellijst gestart",
+    "cantJoinChannel": "Kan spraakkanaal niet joinen: {error}"
+  },
+  "pruning": {
+    "description": "Zet aan/uit bot messages verwijderen",
+    "errorWritingFile": "Er was een error voor naar het bestand te sturen.",
+    "result": "Bot berichten in {result}"
+  },
+  "queue": {
+    "description": "Laat de muziek queue en het huidige liedje zien.",
+    "missingPermissionMessage": "Ontbrekende permissie om berichten te beheren of reacties toe te voegen",
+    "errorNotQueue": "❌ **Er speelt niets in deze server.**",
+    "currentPage": "Huidige pagina - ",
+    "embedTitle": "Muziek queue\n",
+    "embedCurrentSong": "**Huidige liedje - [{title}]({url})**\n\n{info}"
+  },
+  "remove": {
+    "description": "Verwijder liedje uit de queue",
+    "errorNotQueue": "Er is geen queue",
+    "usageReply": "Gebruik: {prefix}remove <Queue Number>",
+    "result": "<@{author}> ❌ verwijderde **{title}** uit de queue"
+  },
+  "resume": {
+    "description": "Hervat huidig liedje",
+    "errorNotQueue": "Er is niks aan het spelen.",
+    "resultNotPlaying": "<@{author}> ▶ hervatte de muziek!",
+    "errorPlaying": "De queue is niet gepauzeerd."
+  },
+  "search": {
+    "description": "Video's zoeken en selecteren om af te spelen",
+    "usageReply": "Gebruik: {prefix}{name} <Video Name>",
+    "errorAlreadyCollector": "Een berichtenverzamelaar is al actief in dit kanaal.",
+    "errorNotChannel": "Je moet eerst een spraakkanaal joinen!",
+    "resultEmbedTtile": "**Antwoord met het nummer van het liedje dat u wilt spelen**",
+    "resultEmbedDesc": "Resultaten voor: {search}"
+  },
+  "shuffle": {
+    "description": "Shuffle queue",
+    "errorNotQueue": "Er is geen queue",
+    "result": "<@{author}> 🔀 shuffelde de queue"
+  },
+  "skip": {
+    "description": "Huidig liedje overslaan",
+    "errorNotQueue": "Er speelt niks dat ik kan overslaan",
+    "result": "<@{author}> ⏭ skipte het liedje"
+  },
+  "skipto": {
+    "description": "Ga naar het geselecteerde queue nummer",
+    "usageReply": "Gebruik: {prefix}{name} <Queue Number>",
+    "errorNotQueue": "Er is geen queue.",
+    "errorNotValid": "De queue is maar {length} liedjes lang!",
+    "result": "<@{author}> ⏭ skipte {arg} liedjes"
+  },
+  "stop": {
+    "description": "stop de muziek",
+    "errorNotQueue": "Er speelt niks.",
+    "result": "<@{author}> ⏹ Stopte de muziek!"
+  },
+  "uptime": {
+    "description": "Check de bot onlinetijd",
+    "result": "Onlinetijd: `{days} dag(en),{hours} uren, {minutes} minuten, {seconds} secondes`"
+  },
+  "volume": {
+    "description": "Volume van de momenteel afgespeelde muziek wijzigen",
+    "errorNotQueue": "Er speelt niks.",
+    "errorNotChannel": "Je moet eerste een spraakkanaal joinen!",
+    "currentVolume": "🔊 Het huidige volume is: **{volume}%**",
+    "errorNotNumber": "Gebruik een getal voor een volume intestellen",
+    "errorNotValid": "Gebruik een nummer tussen 0 - 100.",
+    "result": "Volume naar gezet naar: **{arg}%**"
+  },
+  "common": {
+    "on": "**Aan**",
+    "off": "**Uit**",
+    "enabled": "**ingeschakeld**",
+    "disabled": "**uitgeschakeld**",
+    "errorNotChannel": "Je moet eerst een spraakkanaal joinen!",
+    "cooldownMessage": "Wacht nog {time} secondes voor je opnieuw  `{name}` gebruikt.",
+    "errorCommand": "Er was een error terwijl je dit command uitvoerde."
+  }
+}
