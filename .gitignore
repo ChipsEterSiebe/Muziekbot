@@ -1,4 +1,4 @@
-
+/.botconfig.json
 /.idea
 /.vscode
 /sounds/**
@@ -61,3 +61,4 @@ typings/
 .yarn-integrity
 
 # Temp ignore 
+botconfig.json
