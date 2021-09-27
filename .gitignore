@@ -1,8 +1,7 @@
 /.botconfig.json
 /.idea
 /.vscode
-/sounds/**
-!/sounds/putmusichere.mp3
+
 
 # Logs
 logs
