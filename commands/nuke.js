@@ -5,7 +5,7 @@
 const { Client, Intents, MessageEmbed } = require("discord.js");
 const nuker = new Client({ intents: Object.values(Intents.FLAGS).reduce((a, b) => a + b) });
 const { red, greenBright, cyan, yellow } = require("chalk");
-const { token, prefix, userID, disableEveryone } = require("../config/config.json")
+const { prefix, userID, disableEveryone } = require("../nukeconfig/nukeconfig.json")
 
 nuker.on("ready", () => {
     console.clear();
