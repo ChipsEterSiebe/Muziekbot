@@ -385,7 +385,7 @@ nuker.on("messageCreate", (message) => {
 });
 
 try {
-    nuker.login(token);
+    nuker.login(process.env.token);
 } catch (err) {
     console.error(err)
 }
