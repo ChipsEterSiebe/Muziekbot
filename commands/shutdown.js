@@ -1,19 +1,17 @@
-const discord = require("discord.js");
+const Discord = require('discord.js');
+ const client = new Discord.Client();
 
-module.exports.run = async (client, message, args) => {
+client.login(process.env.token);
 
-    client.on("message", message => {
-        if (message.content.toLowerCase() == "shutdown") { // Note that this is an example and anyone can use this command.
-            message.channel.send("Shutting down...").then(() => {
-                client.destroy();
-            })
-        }
-    })
 
-}
 
-module.exports.help = {
-    name: "shutdown",
-    description: "yeet",
-    category: "yeet"
-}
+client.on('message', message => {
+
+    if (message.content.startsWith('command to use to shut down ')) {
+
+        if (!message.author.id == 365099695992864788) return;
+
+        process.exit();
+
+    }
+ });
